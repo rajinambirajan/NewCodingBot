@@ -1,49 +1,60 @@
-/* CSS Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f3f3f3;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
-header {
-  background-color: #232f3e;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+
+#todo-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
-.container {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
+
+#todo-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
 }
-.jumbotron {
-  background-color: #f8f8f8;
-  padding: 50px 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+#todo-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
-.jumbotron h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #333;
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
 }
-.jumbotron p {
-  font-size: 18px;
-  text-align: center;
-  color: #666;
+
+.todo-item input[type="checkbox"] {
+    margin-right: 5px;
 }
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FF9900;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
+
+.todo-item label {
+    flex: 1;
+    word-break: break-all;
 }
-.btn:hover {
-  background-color: #FFB266;
+
+.delete-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
 }
